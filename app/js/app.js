@@ -5,9 +5,7 @@ require.config({
     baseUrl: 'js',
     paths: {
         lib: './lib',
-        view: './view',
-        template: './view/template'
-
+        view: './view'
     }
 });
 

@@ -6,8 +6,8 @@ define([
     'ace/ace',
     'ace/ext/language_tools',
     'lib/doT',
-    'lib/text!template/test-runner.tpl',
-    'lib/text!view/sample-script.txt'
+    'lib/text!view/template/test-runner.tpl',
+    'lib/text!view/template/sample-script.txt'
 ], function (exports, ace, tools, doT, testRunnerTpl, sampleScriptText) {
     'use strict';
 

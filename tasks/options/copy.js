@@ -8,23 +8,14 @@ module.exports = {
                     'index.html',
                     'fonts/**',
                     'img/**',
-                    'js/view/*.html'
+                    'js/lib/require.js',
+                    'js/lib/ace/worker-javascript.js'
                 ],
                 dest: '<%= folder.dist %>/'
             },
             {
-                src: '<%= folder.src %>/js/all-lib-min.js',
-                dest: '<%= folder.dist %>/js/all-lib.js'
+                '<%= folder.dist %>/js/ace/worker/worker.js': '<%= folder.src %>/js/lib/ace/worker-javascript.js'
             }
-//            {
-//                expand: true,
-//                src: ['<%= folder.src %>/js/all-lib-min.js'],
-//                dest: '<%= folder.dist %>/js/',
-//                rename: function(dest, src) {
-//                    console.log(src);
-//                    return src.replace('-min.js', '.js');
-//                }
-//            }
         ]
     }
 };

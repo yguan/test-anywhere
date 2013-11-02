@@ -8,6 +8,7 @@ module.exports = {
             optimize: 'uglify2',
             findNestedDependencies: true,
             inlineText: true,
+//            optimizeAllPluginResources: false,
             preserveLicenseComments: false
         }
     }

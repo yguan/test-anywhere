@@ -8,7 +8,7 @@ module.exports = {
     },
     cssdist: {
         src: [
-            '<%= folder.src %>/less/css/mocha.css',
+            '<%= folder.src %>/less/mocha.css',
             '<%= folder.distTemp %>/app.css'
         ],
         dest: '<%= folder.dist %>/css/app-min.css'
