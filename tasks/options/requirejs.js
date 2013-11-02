@@ -9,7 +9,15 @@ module.exports = {
             findNestedDependencies: true,
             inlineText: true,
 //            optimizeAllPluginResources: false,
-            preserveLicenseComments: false
+            preserveLicenseComments: false,
+            paths: {
+                ace: 'lib/ace/ace'
+            },
+            shim: {
+                'ace': {
+                    exports: 'ace'
+                }
+            }
         }
     }
 };

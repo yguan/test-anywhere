@@ -1,14 +1,13 @@
 /*jslint nomen: true, evil: true */
-/*global $,define,require,mocha */
+/*global $,define,require,mocha,ace */
 
 define([
     'exports',
-    'ace/ace',
-    'ace/ext/language_tools',
+    'ace',
     'lib/doT',
     'lib/text!view/template/test-runner.tpl',
     'lib/text!view/template/sample-script.txt'
-], function (exports, ace, tools, doT, testRunnerTpl, sampleScriptText) {
+], function (exports, ace, doT, testRunnerTpl, sampleScriptText) {
     'use strict';
 
     exports.create = function (editorId) {

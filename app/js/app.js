@@ -5,16 +5,18 @@ require.config({
     baseUrl: 'js',
     paths: {
         lib: './lib',
-        view: './view'
+        view: './view',
+        ace: './lib/ace/ace'
+    },
+    shim: {
+        'ace': {
+            exports: 'ace'
+        }
     }
 });
 
 require([
     'lib/text',
-    'lib/ace/ace',
-    'lib/ace/theme-chrome',
-    'lib/ace/mode-javascript',
-    'lib/ace/ext-language_tools',
     'lib/zepto',
     'lib/doT',
     'lib/mocha'

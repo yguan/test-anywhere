@@ -9,12 +9,9 @@ module.exports = {
                     'fonts/**',
                     'img/**',
                     'js/lib/require.js',
-                    'js/lib/ace/worker-javascript.js'
+                    'js/lib/ace/**'
                 ],
                 dest: '<%= folder.dist %>/'
-            },
-            {
-                '<%= folder.dist %>/js/ace/worker/worker.js': '<%= folder.src %>/js/lib/ace/worker-javascript.js'
             }
         ]
     }
