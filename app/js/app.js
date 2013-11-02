@@ -1,25 +1,12 @@
 /*jslint nomen: true*/
 /*global $,define,require,window */
 
-require.config({
-    baseUrl: 'js',
-    paths: {
-        lib: './lib',
-        view: './view',
-        ace: './lib/ace/ace'
-    },
-    shim: {
-        'ace': {
-            exports: 'ace'
-        }
-    }
-});
-
 require([
     'lib/text',
     'lib/zepto',
     'lib/doT',
-    'lib/mocha'
+    'lib/mocha',
+    'aceMain'
 ], function () {
     'use strict';
     window.mocha.ui('bdd');

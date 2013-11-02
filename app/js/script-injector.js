@@ -10,12 +10,12 @@
     function loadFile(fileRef, callback) {
         if (fileRef.readyState) {  //IE
             fileRef.onreadystatechange = function () {
-                if (fileRef.readyState === 'loaded' || fileRef.readyState === 'complete') {
+                if (callback && (fileRef.readyState === 'loaded' || fileRef.readyState === 'complete')) {
                     fileRef.onreadystatechange = null;
                     callback();
                 }
             };
-        } else {  //Others
+        } else if (callback) {  //Others
             fileRef.onload = function () {
                 callback();
             };
@@ -39,7 +39,7 @@
     }
 
 
-    var baseUrl = '';
+    var baseUrl = 'http://localhost:9000/';
     loadCss(baseUrl + 'css/app-min.css');
-    loadJs(baseUrl + 'js/lib/app-min.js');
+    loadJs(baseUrl + 'js/app.js');
 }());

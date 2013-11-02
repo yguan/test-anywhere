@@ -12,6 +12,9 @@ module.exports = {
                     'js/lib/ace/**'
                 ],
                 dest: '<%= folder.dist %>/'
+            },
+            {
+                '<%= folder.dist %>/js/app-config.js': '<%= folder.src %>/js/app-config-dist.js'
             }
         ]
     }
