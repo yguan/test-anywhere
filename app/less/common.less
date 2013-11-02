@@ -10,3 +10,9 @@
   right: 0;
   z-index: 1000;
 };
+
+.opacity(@opacity) {
+  zoom: 1;
+  filter: ~"alpha(opacity=@{opacity})";
+  opacity: @opacity;
+};

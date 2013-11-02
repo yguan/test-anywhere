@@ -3,12 +3,22 @@
 <head>
     <title>js test anywhere</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/app.css" rel="stylesheet" media="screen">
+    <link href="css/app-min.css?v=110213" rel="stylesheet" media="screen">
     <script src ="js/lib/require.js"></script>
-    <script src ="js/app.js"></script>
+    <script src ="js/app.js?v=110213"></script>
 </head>
 <body>
-<div ng-view="" class="viewport"></div>
+<style>
+    #block {
+        width: 200px;
+        height: 200px;
+        border: solid 1px gray;
+        background-color: greenyellow;
+        margin: 150px;
+        text-align: center;
+    }
+</style>
+<div id="block">Block be manipulated</div>
 <a href="https://github.com/yguan/test-anywhere"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 </body>
 </html>

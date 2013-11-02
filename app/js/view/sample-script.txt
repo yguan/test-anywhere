@@ -1,0 +1,16 @@
+describe('DOM', function () {
+    function reverse() {
+        $('#block').animate({rotateZ: '-45deg'}, 500, 'ease-out');
+    }
+
+    it('should rotate the block', function() {
+        $('#block').animate({
+            rotateZ: '45deg'
+            }, {
+                duration: 500,
+                easing: 'ease-out',
+                complete: reverse
+            }
+        );
+    });
+});

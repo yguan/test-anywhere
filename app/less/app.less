@@ -1,18 +1,87 @@
 @import "common";
 
-@editor-width: 500px;
-@editor-height: 500px;
+@editor-width: 700px;
+@editor-height: 350px;
 
-.ace_editor {
-  position: absolute;
+.container-border-style {
+  border: 1px solid gray;
+};
+
+.test-runner {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  .opacity(0.3);
+
+  &:hover {
+    .opacity(1);
+  }
+}
+
+#mocha {
+  .container-border-style;
+  margin: 0 !important;
+  background-color: white;
+
+  ul, li {
+    margin-bottom: 10px !important;
+  }
+
+  #mocha-report {
+    .duration {
+      color: orange;
+      font-size: 12px;
+      display: inline-block;
+    }
+
+    a {
+      display: none;
+    }
+  }
+}
+
+#mocha-stats {
+  background-color: #CCF780;
+  position: relative !important;
   top: 0;
-  left: 0;
-  border: 1px solid lightgray;
+  right: 0;
+  margin: 0 !important;
+}
+
+.mocha-report {
+  .replay {
+    display: none;
+  }
+
+}
+
+.code-editor {
   width: @editor-width;
   height: @editor-height;
   background-color: white;
+  margin-top: 5px;
+  .container-border-style;
 
   .full-screen {
     .full-screen;
+  }
+}
+
+.ace_autocomplete {
+  .opacity(0.8);
+}
+
+.btn-primary {
+  font-size: 14px;
+  color: #fff;
+  background-color: #428bca;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 6px 12px;
+  outline: none;
+
+  &:hover {
+    color: #fff;
+    background-color: #3276b1;
   }
 }

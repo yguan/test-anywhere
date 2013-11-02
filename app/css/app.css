@@ -10,16 +10,57 @@
   right: 0;
   z-index: 1000;
 }
-.ace_editor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 1px solid lightgray;
-  width: 500px;
-  height: 500px;
+.container-border-style {
+  border: 1px solid gray;
+}
+.test-runner {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  zoom: 1;
+  filter: alpha(opacity=0.3);
+  opacity: 0.3;
+}
+.test-runner:hover {
+  zoom: 1;
+  filter: alpha(opacity=1);
+  opacity: 1;
+}
+#mocha {
+  border: 1px solid gray;
+  margin: 0 !important;
   background-color: white;
 }
-.ace_editor .full-screen {
+#mocha ul,
+#mocha li {
+  margin-bottom: 10px !important;
+}
+#mocha #mocha-report .duration {
+  color: orange;
+  font-size: 12px;
+  display: inline-block;
+}
+#mocha #mocha-report a {
+  display: none;
+}
+#mocha-stats {
+  background-color: #CCF780;
+  position: relative !important;
+  top: 0;
+  right: 0;
+  margin: 0 !important;
+}
+.mocha-report .replay {
+  display: none;
+}
+.code-editor {
+  width: 700px;
+  height: 350px;
+  background-color: white;
+  margin-top: 5px;
+  border: 1px solid gray;
+}
+.code-editor .full-screen {
   height: auto;
   width: auto;
   border: 0;
@@ -30,4 +71,22 @@
   left: 0;
   right: 0;
   z-index: 1000;
+}
+.ace_autocomplete {
+  zoom: 1;
+  filter: alpha(opacity=0.8);
+  opacity: 0.8;
+}
+.btn-primary {
+  font-size: 14px;
+  color: #fff;
+  background-color: #428bca;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 6px 12px;
+  outline: none;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #3276b1;
 }
