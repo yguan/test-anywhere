@@ -4,7 +4,7 @@ module.exports = {
             baseUrl: '<%= folder.src %>/js/',
             name: '<%= folder.src %>',
             exclude: ['aceMain'],
-            out: '<%= folder.dist %>/js/app.js',
+            out: '<%= folder.distTemp %>/app.js',
             generateSourceMaps: false,
             optimize: 'uglify2',
             findNestedDependencies: true,
