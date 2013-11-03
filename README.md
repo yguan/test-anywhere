@@ -14,7 +14,7 @@ Move your mouse over the test runner on the right side and click the `Run Test` 
 
 ## Script Injection
 
-If you want to inject the Ace Editor along with the mocha test framework a non-https website, do the following steps:
+If you want to inject the [Ace Editor](http://ace.c9.io/) along with the [mocha](http://visionmedia.github.io/mocha/) test framework a non-https website, do the following steps:
 * navigate to a website that you want to inject the test runner
 * copy the code from [script-injector.js](https://github.com/yguan/test-anywhere/blob/master/app/js/script-injector.js)
 * paste the script into the browser console to run it
