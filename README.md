@@ -65,6 +65,24 @@ If you have [python](http://www.python.org/download/) installed, run the followi
 - go to your browser, and type in the `localhost:8000` to the address bar
 - you should see the site running in the browser
 
+## The Benefits of Using Script Injection for Tests
+
+Test Anywhere shows the possibility of inject JavaScript to test any website with any browser. Even though mocha is used here, any other test frameworks can be used as well.
+
+Writing UI end-to-end tests with JavaScripts has lots of benefits:
+* <b>Faster Feedback</b>
+ * You can write the code, run it with the runner or the browser console to see if your test is correct.
+ * You can debug the test with the browser's developer tools.
+* <b>Time Saving</b>
+ * Because the fast feedback, it will take less time to write test compare to other browser instrumentation frameworks, such as Selenium, WatiN, and Microsoft Test.
+ * With the browser instrumentation frameworks, people usually write more abstract code and more complicated code. Moreover, writing tests are usually really time consuming because you have to figure out the right selector and UI action steps. You have to write the test first, run it to see if it works, then fix it and run it again. If something breaks, the debugger will give you information that you have to think a little bit longer than understanding the exception on the browser console.
+* <b>Money Saving</b>
+ * Time is money, and saving time is saving money. A lot of companies still heavily rely on manual testing and/or browser instrumentation testing. Both approach are time consuming, boring, and frustrated if you have to deal with them on daily basis.
+
+## What's Next
+
+The [mocha_webdriver_tests](https://github.com/yguan/mocha_webdriver_tests) I wrote a few months ago shows how to use WebDriver to start a browser sesssion, and the inject test scripts. It's not production-ready yet, but it got most of details figured out. If anyone interested in it, let me know. I can show you know what I know about automated testing and what we can do to make UI end-to-end testing a lot easier.
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
