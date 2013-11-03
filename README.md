@@ -83,7 +83,7 @@ Writing UI end-to-end tests with JavaScripts has lots of benefits:
 
 The [mocha_webdriver_tests](https://github.com/yguan/mocha_webdriver_tests) I wrote a few months ago shows how to use WebDriver to start a browser sesssion, and the inject test scripts. It's not production-ready yet, but it got most of details figured out. If anyone interested in it, let me know. I can show you know what I know about automated testing and what we can do to make UI end-to-end testing a lot easier.
 
-if you're interested on a broad overview of test frameworks, you should checkout [Vojtěch Jína](https://github.com/vojtajina)'s [thesis](https://github.com/karma-runner/karma/raw/master/thesis.pdf).
+if you're interested in a broad overview of test frameworks, you should checkout [Vojtěch Jína](https://github.com/vojtajina)'s [thesis](https://github.com/karma-runner/karma/raw/master/thesis.pdf).
 
 ## License
 
