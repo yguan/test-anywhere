@@ -14,3 +14,7 @@ describe('DOM', function () {
         );
     });
 });
+
+// ctrl + space for autocomplete
+
+// arrows next to the line numbers can collapse code blocks

@@ -268,7 +268,7 @@ body {
 }
 .test-runner {
   position: absolute !important;
-  top: 10px;
+  top: 70px;
   right: 10px;
   zoom: 1;
   filter: alpha(opacity=0.3);

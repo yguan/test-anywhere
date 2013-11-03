@@ -39,7 +39,7 @@
     }
 
 
-    var baseUrl = 'http://localhost:9000/';
+    var baseUrl = 'http://yguan.github.io/repos/test-anywhere/'; // here is url to your test code to be injected
     loadCss(baseUrl + 'css/app-min.css');
-    loadJs(baseUrl + 'js/app.js');
+    loadJs(baseUrl + 'js/app-min.js');
 }());

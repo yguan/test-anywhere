@@ -40,6 +40,7 @@ define([
             enableBasicAutocompletion: true
         });
         editor.setValue(sampleScriptText);
+        editor.gotoLine(0);
     };
 
 });

@@ -6,8 +6,8 @@ require.config({
     paths: {
         lib: './lib',
         view: './view',
-        aceMain: 'http://localhost:9000/js/lib/ace/ace',
-        aceLanguage: 'http://localhost:9000/js/lib/ace/ext-language_tools'
+        aceMain: 'http://yguan.github.io/repos/test-anywhere/js/lib/ace/ace',
+        aceLanguage: 'http://yguan.github.io/repos/test-anywhere/js/lib/ace/ext-language_tools'
     },
     shim: {
         'aceMain': {
