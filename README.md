@@ -1,31 +1,25 @@
-# Windows 8 Style Dashboard
+# Test Anywhere
 
-This repository contains the source code of a Windows 8 style dashboard built with AngularJS, bootstrap, gridster, and angular-carousel.
+Test Anywhere is a test runner that you can inject to any website to run JavaScript tests. It is a showcase of how script injection can be used for end-to-end UI automation tests. It aims to show people that it is easier to write JavaScript tests that interact with the browser directly than writing WebDriver tests that go through layers before instrumenting the browser to do the actions.
 
 ## Demo
 
-It's hosted [here](http://yguan.github.io/repos/dashboard/).
+It's hosted [here](http://yguan.github.io/repos/test-anywhere/).
 
 ## UI Interaction
 
-[![](http://yguan.github.io/img/projects/dashboard.png)](http://yguan.github.io/repos/dashboard/)
+[![](http://yguan.github.io/img/projects/test-anywhere.png)](http://yguan.github.io/repos/test-anywhere/)
 
-### Manipulate the cards
-* <b>Resize Card:</b> Move the cursor to a card's right, bottom, or right bottom corner, and then drag to resize
-* <b>Move Card:</b> Click and drag the card
+Move your mouse over the test runner on the right side and click the `Run Test` button to see it in action. You can also write code in the editor and run it against your browser.
 
-### Add more slides
-* Click the plus sign icon on the left
-* Type in the number of cards
-* Click the save button
+## Script Injection
 
-### Move slides
-* Use left/right arrow key
-* Use mouse click on the top/bottom area (not on cards) and drag to left/right
+If you want to inject the Ace Editor along with the mocha test framework a non-https website, do the following steps:
+* navigate to a website that you want to inject the test runner
+* copy the code from [script-injector.js](https://github.com/yguan/test-anywhere/blob/master/app/js/script-injector.js)
+* paste the script into the browser console to run it
 
-### For Touch Devices
-
-It seems to be working for Android Jelly Bean. To move the card, touch, and hold for a brief moment, then move the card. To resize, just touch the bottom right corner and move. To move slide, touch and move.
+Note: if you are hosting the test runner, set variable `baseUrl` to the right url.
 
 ## Development
 
@@ -36,20 +30,23 @@ It seems to be working for Android Jelly Bean. To move the card, touch, and hold
 - `less` [less](http://lesscss.org/) files for generating CSS files
 - `img`  Images
 - `js` JavaScripts files and template files
-  - `data` Data used by the charts or views
-  - `extension` Extensions for libraries in the `lib` folder
   - `lib` Libraries
   - `views` Controllers and view partials
 
-## Grunt Configuration
+#### require.js Config
 
-Based on Thomas Boyt's[`More maintainable Gruntfiles](http://www.thomasboyt.com/2013/09/01/maintainable-grunt.html), I split the Gruntfile.js into files under `tasks` folder. I think it's more maintainable.
+* [app-config.js](https://github.com/yguan/test-anywhere/blob/master/app/js/app-config.js) is the require.js config used in development.
+* [app-config-dist.js](https://github.com/yguan/test-anywhere/blob/master/app/js/app-config-dist.js) is used the build. It specifies the absolute url for `ace.js` and `ext-language_tools.js` so that when injecting the script, Ace Editor will load correctly.
+
+#### Grunt Configuration
+
+All the grunt config and options are located in the `tasks` folder.
 
 ## Build
 
 To build the package, you have to have `node.js` installed, then in command line console, run the followings steps once:
 
-- go to `portfolio-site` folder
+- go to `test-anywhere` folder
 - (if grunt-cli is not installed) run `npm install -g grunt-cli`
 - run `npm install`
 
