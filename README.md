@@ -41,12 +41,14 @@ Note: if you are hosting the test runner, set variable `baseUrl` to the right ur
 #### Grunt Configuration
 
 All the grunt config and options are located in the `tasks` folder, and here is the list of grunt commands:
-* `grunt` - runs the watch command that compile less file automatically whenever there is a change.
+* `grunt` - run the watch command that compile less file automatically whenever there is a change.
 * `grunt lib` - concatenate some of the non-require.js dependent libraries to `all-lib.js` and minifies it to `all-lib-min.js`.
 * `grunt cssdev` - compile less files to `app.css`.
 * `grunt cssdist` - compile less files and compress them to create `app.css`, then concatenate it with `mocha.css`.
 * `grunt dev` - compile less files, and concatenate JavaScripts files to create not-minified `app-min.js`.
 * `grunt build` - create the compressed package in `dist` folder.
+* `grunt sdev` - start a http server at `localhost:9000` for `app` folder.
+* `grunt sdist` - start a http server at `localhost:9001` for `dist` folder.
 
 ## Build
 
@@ -64,11 +66,12 @@ Now, you can build your project with running `grunt build`. The output folder is
 
 ## Run the Website locally
 
-If you have [python](http://www.python.org/download/) installed, run the following steps in the command line console:
+In your command line console, run the following steps:
 
-- go to `app` folder
-- run `python -m http.server` (you can specify port number at the end as well, default is 8000)
-- go to your browser, and type in the `localhost:8000` to the address bar
+- go to `test-anywhere` folder
+- run `grunt sdev` to start a http sever at `localhost:9000` for `app` folder
+- run `grunt sdist` to start a http sever at `localhost:9001` for `app` folder
+- go to your browser, and type in `localhost:9000` or `localhost:9001` to the address bar
 - you should see the site running in the browser
 
 ## The Benefits of Using Script Injection for Tests
