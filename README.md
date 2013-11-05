@@ -70,7 +70,7 @@ In your command line console, run the following steps:
 
 - go to `test-anywhere` folder
 - run `grunt sdev` to start a http sever at `localhost:9000` for `app` folder
-- run `grunt sdist` to start a http sever at `localhost:9001` for `app` folder
+- run `grunt sdist` to start a http sever at `localhost:9001` for `dist` folder
 - go to your browser, and type in `localhost:9000` or `localhost:9001` to the address bar
 - you should see the site running in the browser
 
