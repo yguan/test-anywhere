@@ -2,18 +2,17 @@
 /*global $,define,require,window */
 
 require([
+    'lib/chai',
     'lib/text',
-    'lib/zepto',
     'lib/doT',
-    'lib/mocha',
     'aceMain'
-], function () {
+], function (chai) {
     'use strict';
     window.mocha.ui('bdd');
     window.mocha.reporter('html');
+    chai.should();
 
-    require(['lib/chai', 'view/all-views'], function (chai, views) {
-        chai.should();
+    require(['view/all-views'], function (views) {
         views.init();
     });
 });

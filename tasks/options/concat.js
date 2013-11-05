@@ -13,9 +13,17 @@ module.exports = {
         ],
         dest: '<%= folder.dist %>/css/app-min.css'
     },
+    lib: {
+        src: [
+            '<%= folder.src %>/js/lib/jquery-1.10.2.js',
+            '<%= folder.src %>/js/lib/require.js',
+            '<%= folder.src %>/js/lib/mocha.js'
+        ],
+        dest: '<%= folder.src %>/js/all-lib.js'
+    },
     appdev: {
         src: [
-            '<%= folder.src %>/js/lib/require-min.js',
+            '<%= folder.src %>/js/all-lib.js',
             '<%= folder.src %>/js/app-config.js',
             '<%= folder.src %>/js/app.js'
         ],
@@ -23,7 +31,7 @@ module.exports = {
     },
     appdist: {
         src: [
-            '<%= folder.src %>/js/lib/require-min.js',
+            '<%= folder.src %>/js/all-lib-min.js',
             '<%= folder.src %>/js/app-config-dist.js',
             '<%= folder.distTemp %>/app.js'
         ],

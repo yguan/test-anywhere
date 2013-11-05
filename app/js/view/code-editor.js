@@ -42,5 +42,4 @@ define([
         editor.setValue(sampleScriptText);
         editor.gotoLine(0);
     };
-
 });
