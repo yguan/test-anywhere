@@ -40,7 +40,13 @@ Note: if you are hosting the test runner, set variable `baseUrl` to the right ur
 
 #### Grunt Configuration
 
-All the grunt config and options are located in the `tasks` folder.
+All the grunt config and options are located in the `tasks` folder, and here is the list of grunt commands:
+* `grunt` - runs the watch command that compile less file automatically whenever there is a change.
+* `grunt lib` - concatenate some of the non-require.js dependent libraries to `all-lib.js` and minifies it to `all-lib-min.js`.
+* `grunt cssdev` - compile less files to `app.css`.
+* `grunt cssdist` - compile less files and compress them to create `app.css`, then concatenate it with `mocha.css`.
+* `grunt dev` - compile less files, and concatenate JavaScripts files to create not-minified `app-min.js`.
+* `grunt build` - create the compressed package in `dist` folder.
 
 ## Build
 
